@@ -1,0 +1,10 @@
+instalar venv en una carpeta
+python -m venv c:\ruta\al\entorno\virtual
+ejecutar venv en la carpeta
+\ruta\al\entorno\virtual\scripts\activate
+crear carpeta y pegar app.py
+c:\ruta\al\entorno\aplicacion
+
+Ejecuar api con
+
+ python .\ruta\al\entorno\aplicacion\app.py

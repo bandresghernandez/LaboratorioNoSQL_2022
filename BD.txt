@@ -1,0 +1,16 @@
+CREATE KEYSPACE "Laboratorio" WITH replication = {'class' : 'SimpleStrategy','replication_factor' : 1};
+
+USE "Laboratorio";
+
+CREATE TABLE "Laboratorio"."Libro_Autor" ("idTipo" int,	"idCategoria" int,"nombreAutor" text,"titulo" text,"editorial" text,"resenia" text,PRIMARY KEY ( ("idTipo","idCategoria"), "nombreAutor", "titulo"));
+
+
+
+INSERT INTO "Laboratorio"."Libro_Autor" ("idTipo","idCategoria","nombreAutor","titulo","editorial","resenia")VALUES(1, 3, 'Sun Tzu','El arte de la guerra','metallica','El arte de la guerra es...') IF NOT EXISTS;
+INSERT INTO "Laboratorio"."Libro_Autor" ("idTipo","idCategoria","nombreAutor","titulo","editorial","resenia")VALUES(1, 4, 'Dante Alighieri','Divina comedia','led zeppelin','Detalla los 9 infiernos') IF NOT EXISTS;
+INSERT INTO "Laboratorio"."Libro_Autor" ("idTipo","idCategoria","nombreAutor","titulo","editorial","resenia")VALUES(1, 5, 'Gerard J. Tortora','Principios de Anatomía y Fisiología','ESFERA DE LOS LIBROS','Principios de Anatomía y Fisiología es...') IF NOT EXISTS;
+INSERT INTO "Laboratorio"."Libro_Autor" ("idTipo","idCategoria","nombreAutor","titulo","editorial","resenia")VALUES(1, 1, 'Stephen King','Cuento de hadas','Una editorial','Cuento de hadas es...') IF NOT EXISTS;
+INSERT INTO "Laboratorio"."Libro_Autor" ("idTipo","idCategoria","nombreAutor","titulo","editorial","resenia")VALUES(1, 3, 'VON CLAUSEWITZ, CARL','Libro De la guerra','ESFERA DE LOS LIBROS','Libro De la guerra es..') IF NOT EXISTS;
+INSERT INTO "Laboratorio"."Libro_Autor" ("idTipo","idCategoria","nombreAutor","titulo","editorial","resenia")VALUES(1, 2, 'George Orwell', 'Rebelion en la Granja', 'Emece','Rebelion en la Granja es..') IF NOT EXISTS;
+INSERT INTO "Laboratorio"."Libro_Autor" ("idTipo","idCategoria","nombreAutor","titulo","editorial","resenia")VALUES(1, 1, 'Oscar Wilde', 'El principe feliz', 'Santillana','El principe feliz es...') IF NOT EXISTS;  
+INSERT INTO "Laboratorio"."Libro_Autor" ("idTipo","idCategoria","nombreAutor","titulo","editorial","resenia")VALUES(1, 1, 'Oscar Wilde', 'El principe egoista', 'Santillana','El principe egoista es...') IF NOT EXISTS;  
